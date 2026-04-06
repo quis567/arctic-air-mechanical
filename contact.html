@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Arctic Air Mechanical</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container navbar-container">
+            <a href="/" class="logo">
+                <svg class="logo-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="36" height="36" fill="currentColor">
+                    <path d="M16 0l1.5 6.5L22 3l-2 6.5L26 6l-4.5 5L28 9.5 22 13l6.5 1.5L22 16l6.5 1.5L22 19l6-1.5-5.5 2L26 26l-6-3.5L22 29l-4.5-3.5L16 32l-1.5-6.5L10 29l2-6.5L6 26l4.5-5L4 22.5 10 19l-6.5-1.5L10 16 3.5 14.5 10 13 4 11.5l5.5-2L6 6l6 3.5L10 3l4.5 3.5L16 0z"/>
+                </svg>
+                <div class="logo-text">
+                    <span class="logo-name">Arctic Air Mechanical</span>
+                    <span class="logo-tagline">Keeping Orlando Cool Since 2008</span>
+                </div>
+            </a>
+            <ul class="nav-links">
+                <li><a href="/services">Services</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="tel:4075550192" class="nav-phone">(407) 555-0192</a>
+                <a href="/contact" class="btn-orange">Get a Free Quote</a>
+            </div>
+            <button class="hamburger" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <div class="mobile-nav">
+            <ul>
+                <li><a href="/services">Services</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+            <a href="tel:4075550192" class="nav-phone">(407) 555-0192</a>
+            <a href="/contact" class="btn-orange">Get a Free Quote</a>
+        </div>
+    </nav>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="/">Home</a> &gt; <span>Contact</span>
+            </div>
+            <h1>Get in Touch</h1>
+            <p class="page-hero-subtitle">Have a question or need service? We're here to help.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section">
+        <div class="container">
+            <div class="contact-grid">
+
+                <!-- Left Column: Form -->
+                <div class="contact-form">
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" placeholder="Your full name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone</label>
+                            <input type="tel" id="phone" name="phone" placeholder="(407) 555-0000" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Service Needed</label>
+                            <select id="service" name="service" required>
+                                <option value="">Select a Service</option>
+                                <option value="ac-repair">AC Repair</option>
+                                <option value="ac-installation">AC Installation</option>
+                                <option value="heating-service">Heating Service</option>
+                                <option value="maintenance-plan">Maintenance Plan</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Tell us how we can help..."></textarea>
+                        </div>
+                        <button type="submit" class="btn-orange full-width">Send Message</button>
+                    </form>
+                    <div class="form-success" id="form-success" style="display: none;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                            <polyline points="22 4 12 14.01 9 11.01"/>
+                        </svg>
+                        <h3>Thank You!</h3>
+                        <p>We've received your message and will call you within 15 minutes during business hours.</p>
+                    </div>
+                </div>
+
+                <!-- Right Column: Info -->
+                <div class="contact-info">
+                    <div class="contact-info-card">
+                        <h3>Business Hours</h3>
+                        <ul>
+                            <li><strong>Mon&ndash;Fri:</strong> 7am &ndash; 7pm</li>
+                            <li><strong>Saturday:</strong> 8am &ndash; 5pm</li>
+                            <li><strong>Sunday:</strong> Emergency Only</li>
+                        </ul>
+                        <p class="info-note">For after-hours emergencies call <a href="tel:4075550199">(407) 555-0199</a></p>
+                    </div>
+                    <div class="contact-info-card">
+                        <h3>Contact Information</h3>
+                        <ul>
+                            <li><strong>Phone:</strong> <a href="tel:4075550192">(407) 555-0192</a></li>
+                            <li><strong>Email:</strong> <a href="mailto:info@arcticairmechanical.com">info@arcticairmechanical.com</a></li>
+                            <li><strong>Address:</strong> 1842 Commerce Blvd, Orlando, FL 32801</li>
+                        </ul>
+                    </div>
+                    <div class="map-placeholder">
+                        <img src="https://images.unsplash.com/photo-1575089976121-8ed774c2a96e?auto=format&fit=crop&w=800&q=80" alt="Orlando, Florida area map">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="final-cta">
+        <div class="container">
+            <h2>Ready to Experience the Arctic Air Difference?</h2>
+            <p>Join the thousands of Orlando families who trust us with their comfort.</p>
+            <div class="final-cta-actions">
+                <a href="/contact" class="btn-orange">Get a Free Quote</a>
+                <a href="tel:4075550192" class="btn-outline">Call (407) 555-0192</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-brand">
+                        <svg class="logo-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="30" height="30" fill="currentColor">
+                            <path d="M16 0l1.5 6.5L22 3l-2 6.5L26 6l-4.5 5L28 9.5 22 13l6.5 1.5L22 16l6.5 1.5L22 19l6-1.5-5.5 2L26 26l-6-3.5L22 29l-4.5-3.5L16 32l-1.5-6.5L10 29l2-6.5L6 26l4.5-5L4 22.5 10 19l-6.5-1.5L10 16 3.5 14.5 10 13 4 11.5l5.5-2L6 6l6 3.5L10 3l4.5 3.5L16 0z"/>
+                        </svg>
+                        <span>Arctic Air Mechanical</span>
+                    </div>
+                    <p>Family-owned HVAC services in Orlando, FL. Keeping your home comfortable year-round.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="/services">Services</a></li>
+                        <li><a href="/about">About Us</a></li>
+                        <li><a href="/contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="/services/ac-repair">AC Repair</a></li>
+                        <li><a href="/services/ac-installation">AC Installation</a></li>
+                        <li><a href="/services/heating">Heating Services</a></li>
+                        <li><a href="/services/maintenance">Maintenance Plans</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="tel:4075550192">(407) 555-0192</a></li>
+                        <li><a href="mailto:info@arcticairmechanical.com">info@arcticairmechanical.com</a></li>
+                        <li>1842 Commerce Blvd<br>Orlando, FL 32801</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Arctic Air Mechanical. All rights reserved. FL License #CAC1234567</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Call Button -->
+    <a href="tel:4075550192" class="floating-call" aria-label="Call us">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+        </svg>
+    </a>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
